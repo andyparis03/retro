@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌐 Radical 90s Cyberspace 🎮</title>
+    <style>
+        body {
+            background: #000000;
+            color: #00ff00;
+            font-family: "Comic Sans MS", "Arial", sans-serif;
+            margin: 0;
+            background-image: linear-gradient(45deg, #000000 25%, #1a1a1a 25%, #1a1a1a 50%, #000000 50%, #000000 75%, #1a1a1a 75%, #1a1a1a 100%);
+            background-size: 56.57px 56.57px;
+        }
+        
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            border: 5px solid #ff00ff;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .header {
+            text-align: center;
+            border: 3px solid #00ff00;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #000;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px #00ff00;
+            }
+            to {
+                box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00;
+            }
+        }
+        
+        h1 {
+            color: #ff00ff;
+            text-shadow: 3px 3px #00ff00;
+            font-size: 48px;
+            margin: 0;
+        }
+        
+        .marquee {
+            background: #000;
+            color: #ff0;
+            padding: 10px;
+            border: 2px solid #ff0;
+            margin: 20px 0;
+        }
+        
+        .content {
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .sidebar {
+            display: table-cell;
+            width: 200px;
+            padding: 10px;
+            border: 2px solid #00ff00;
+            vertical-align: top;
+        }
+        
+        .main {
+            display: table-cell;
+            padding: 10px;
+            border: 2px solid #00ff00;
+        }
+        
+        .button {
+            background: #ff00ff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 10px 0;
+            font-family: "Comic Sans MS";
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .visitor-counter {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px dashed #ff00ff;
+        }
+        
+        .construction {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px dashed #ff0;
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        
+        .matrix-rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body onload="welcome()">
+    <canvas class="matrix-rain" id="matrix"></canvas>
+    
+    <div id="cursor-trail" style="position: absolute; pointer-events: none; z-index: 9999;"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>WELCOME TO CYBERSPACE</h1>
+            <div style="color: #ff0;">⚡ Est. 1990 ⚡</div>
+        </div>
+
+        <div class="marquee">
+            <marquee scrollamount="5">🎮 Welcome to the future! Loading at 56k... Please wait... Downloading at 3.2 KB/s... 🎮</marquee>
+        </div>
+
+        <div class="content">
+            <div class="sidebar">
+                <h3>📡 NAVIGATION 📡</h3>
+                <button class="button">HOME.EXE</button><br>
+                <button class="button">ABOUT.BAT</button><br>
+                <button class="button">CONTACT.SYS</button>
+                
+                <div class="visitor-counter">
+                    <div>VISITORS:</div>
+                    <div style="font-family: monospace; font-size: 24px; color: #ff0;">000,042</div>
+                </div>
+            </div>
+
+            <div class="main">
+                <h2>🌐 ENTER THE MATRIX 🌐</h2>
+                <p>Welcome to my radical corner of the World Wide Web! This site is best viewed with Netscape Navigator™ at 800x600 resolution.</p>
+                
+                <div class="construction">
+                    🚧 UNDER CONSTRUCTION 🚧
+                    <br>
+                    Please excuse our cyberdust!
+                </div>
+                
+                <p>Featured Links:</p>
+                <ul>
+                    <li>Download FREE Screensavers!</li>
+                    <li>Join our Web Ring</li>
+                    <li>Sign my Guestbook</li>
+                    <li>Cool Links</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html> 
